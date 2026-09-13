@@ -6,9 +6,9 @@
 <p align="center">免費、開源的 Raycast 擴充功能，在 Mac 本機移除常見追蹤參數。<br>先看清楚變更，再複製或貼上。</p>
 <p align="center"><a href="#安裝">在 Mac 安裝</a> · <a href="README.md">English</a> · <a href="#隱私與限制">隱私</a> · <a href="CONTRIBUTING.md">參與開發</a></p>
 
-<p align="center"><img src="docs/images/demo.gif" width="750" alt="Raycast 中的 Clean Link 移除範例網址的 fbclid，保留 id=42，同時顯示整理後的連結與變更摘要。"></p>
+<p align="center"><a href="https://github.com/bblurock/clean-link/releases/download/v0.1.0/clean-link-demo.mp4"><img src="docs/images/demo.gif" width="750" alt="Clean Link 實錄：移除 fbclid、移除 si 並保留 YouTube 時間戳記，以及顯示複製與貼上選項。"></a></p>
 
-<p align="center">15 秒實際介面示範：輸入連結、確認結果、選擇動作。<a href="docs/images/preview.jpg">靜態截圖</a>。</p>
+<p align="center">使用 <a href="https://github.com/getopenscreen/openscreen">OpenScreen</a> 錄製的 25 秒 Raycast 操作示範。<a href="https://github.com/bblurock/clean-link/releases/download/v0.1.0/clean-link-demo.mp4">高畫質影片（MP4）</a> · <a href="docs/images/preview.jpg">靜態截圖</a>。</p>
 
 ```text
 整理前   https://example.com/?id=42&fbclid=demo

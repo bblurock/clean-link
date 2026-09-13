@@ -15,9 +15,9 @@
   <a href="https://github.com/bblurock/clean-link/actions/workflows/ci.yml"><img src="https://github.com/bblurock/clean-link/actions/workflows/ci.yml/badge.svg" alt="Automated checks"></a>
 </p>
 
-<p align="center"><img src="docs/images/demo.gif" width="750" alt="Clean Link in Raycast removes fbclid from a sample URL and preserves id=42, with the cleaned link and removal summary visible together."></p>
+<p align="center"><a href="https://github.com/bblurock/clean-link/releases/download/v0.1.0/clean-link-demo.mp4"><img src="docs/images/demo.gif" width="750" alt="Recorded Clean Link demo: remove fbclid, preserve a YouTube timestamp while removing si, and view copy or paste actions."></a></p>
 
-<p align="center">A 15-second walkthrough of the actual Raycast form: enter a link, review the result, choose an action. <a href="docs/images/preview.jpg">Static screenshot</a>.</p>
+<p align="center">A 25-second recording of Clean Link in Raycast, made with <a href="https://github.com/getopenscreen/openscreen">OpenScreen</a>. <a href="https://github.com/bblurock/clean-link/releases/download/v0.1.0/clean-link-demo.mp4">Full-quality video (MP4)</a> · <a href="docs/images/preview.jpg">Static screenshot</a>.</p>
 
 ```text
 Before   https://example.com/?id=42&fbclid=demo
