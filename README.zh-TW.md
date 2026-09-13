@@ -25,27 +25,70 @@
 
 ## 安裝
 
-**目前提供 macOS 原始碼安裝，尚未上架 Raycast Store。** 需要 [Raycast](https://www.raycast.com/)、含 npm 的 [Node.js](https://nodejs.org/en/download) 22.22.2 以上版本，以及 Git。Node 24 也可使用。
+**在 Mac 上從原始碼安裝。** TidyShareLink 尚未上架 Raycast Store，目前沒有一鍵安裝按鈕。
 
-1. 下載專案並安裝相依套件：
+### 1. 準備 Raycast 與 Node.js
 
-   ```sh
-   git clone https://github.com/bblurock/tidy-share-link.git
-   cd tidy-share-link
-   npm ci
-   ```
+- [下載 Raycast](https://www.raycast.com/)，移到「應用程式」並開啟，完成初次設定。安裝擴充功能時，請保持 Raycast 執行中。
+- 安裝含 npm 的 [Node.js](https://nodejs.org/en/download) **22.22.2 以上版本**，Node 24 也可使用。安裝後重新開啟「終端機」。
+- 從「應用程式 → 工具程式」開啟「終端機」，確認版本：
 
-2. 將擴充功能加入 Raycast：
+  ```sh
+  node --version
+  npm --version
+  ```
 
-   ```sh
-   npm run dev
-   ```
+若找不到其中一個指令，請先完成 Node.js 安裝。Raycast 的 [Import Extension 指令需要登入](https://developers.raycast.com/basics/getting-started)；設定過程中若出現 Raycast 登入提示，請依提示完成。TidyShareLink 沒有另外的帳號。
 
-3. 開啟 Raycast，搜尋 **Tidy Link**，試貼 `https://example.com/?id=42&fbclid=demo`。
+### 2. 下載 TidyShareLink
 
-指令出現後，可以在終端機按 **Ctrl+C** 停止開發程序。擴充功能會留在 Raycast 中，重新啟動 Mac 後仍可使用，無須讓終端機持續執行。這是 [Raycast 支援的本機開發流程](https://developers.raycast.com/basics/create-your-first-extension)。若 Raycast 要求登入以完成開發設定，請依提示操作；TidyShareLink 沒有另外的帳號。
+若已安裝 Git，在終端機執行：
 
-也可以在 GitHub 選擇 **Code → Download ZIP**，解壓縮後在該資料夾開啟終端機，從 `npm ci` 開始。
+```sh
+git clone https://github.com/bblurock/tidy-share-link.git
+cd tidy-share-link
+```
+
+**不使用 Git：**在此 GitHub 頁面選擇 **Code → Download ZIP** 並解壓縮。在終端機輸入 `cd `（包含後面的空格），把解壓縮的資料夾從 Finder 拖進終端機，再按 Return。請選擇包含 `package.json` 的資料夾。
+
+### 3. 建置並加入 Raycast
+
+在專案資料夾中執行：
+
+```sh
+npm ci
+npm run dev
+```
+
+`npm ci` 安裝專案相依套件；`npm run dev` 執行 Raycast 的 `ray develop`，建置 TidyShareLink 並**自動匯入本機的 Raycast**。不必手動複製檔案到 Raycast，也不必另外安裝 Raycast CLI。詳見 [Raycast CLI 文件](https://developers.raycast.com/information/developer-tools/cli#development)。
+
+請等待建置成功訊息。終端機會繼續執行，監看程式碼變更，這是正常現象。
+
+### 4. 確認安裝成功
+
+用平常的快捷鍵開啟 Raycast，搜尋 **Tidy Link** 或 **TidyShareLink**。開啟 **Tidy Link** 指令，貼上以下範例，確認結果保留 `id=42` 並移除 `fbclid`：
+
+```text
+https://example.com/?id=42&fbclid=demo
+```
+
+選擇 **Copy Link** 複製結果。也可以在 **Raycast Settings → Extensions → TidyShareLink** 找到擴充功能。
+
+### 5. 結束安裝程序
+
+確認指令可用後，回到終端機按 **Ctrl+C**，之後即可關閉終端機。擴充功能會留在 Raycast，重新啟動 Mac 後仍可使用，不必每次使用時都執行 `npm run dev`。Raycast 文件也說明了[停止開發模式後繼續使用擴充功能](https://developers.raycast.com/basics/create-your-first-extension#use-your-extension)的流程。
+
+若之後要更新或自訂擴充功能，請保留原始碼資料夾。
+
+### 安裝問題
+
+| 遇到的情況 | 處理方式 |
+| --- | --- |
+| `npm: command not found` 或 Node 版本不支援 | 安裝支援的 Node.js 版本，重新開啟終端機，再用 `node --version` 確認。 |
+| 找不到 `package.json` | 回到步驟 2，確認終端機目前位於解壓縮或複製下來的專案資料夾。 |
+| `npm ci` 或建置失敗 | 先處理終端機顯示的第一個錯誤；回報問題時請附上該錯誤訊息。 |
+| 建置成功，但找不到 Tidy Link | 確認 Raycast 正在執行。在 Raycast 搜尋 **Import Extension**，選擇包含 `package.json` 的專案資料夾並依提示操作。若要求登入，請先登入，再從該資料夾執行 `npm run dev`。 |
+| 仍顯示舊名稱 Clean Link | 更新原始碼並重新執行 `npm run dev`。原始 v0.1.0 發行版壓縮檔尚未更名；請使用上述 main 分支的下載方式取得 TidyShareLink。 |
 
 ## 使用方式
 

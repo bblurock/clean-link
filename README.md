@@ -34,27 +34,70 @@ No link fetching, analytics, or URL history of its own. Cleaning runs locally.
 
 ## Install
 
-**Source installation for macOS.** This release is not in the Raycast Store. You need [Raycast](https://www.raycast.com/), [Node.js](https://nodejs.org/en/download) 22.22.2+ with npm, and Git. Node 24 also works.
+**Install from source on your Mac.** TidyShareLink is not in the Raycast Store yet. There is no one-click Store install for this release.
 
-1. Download the project and install its dependencies:
+### 1. Set up Raycast and Node.js
 
-   ```sh
-   git clone https://github.com/bblurock/tidy-share-link.git
-   cd tidy-share-link
-   npm ci
-   ```
+- [Download Raycast](https://www.raycast.com/), move it to Applications, and open it to finish setup. Keep Raycast running during installation.
+- Install [Node.js](https://nodejs.org/en/download) **22.22.2 or newer** with npm. Node 24 also works. Reopen Terminal after installing Node.js.
+- Open **Terminal** from Applications → Utilities and check:
 
-2. Register it with Raycast:
+  ```sh
+  node --version
+  npm --version
+  ```
 
-   ```sh
-   npm run dev
-   ```
+If either command is missing, finish installing Node.js before continuing. Raycast's [Import Extension command requires signing in](https://developers.raycast.com/basics/getting-started); complete any Raycast sign-in prompt during setup. TidyShareLink has no separate account.
 
-3. Open Raycast, search **Tidy Link**, and try `https://example.com/?id=42&fbclid=demo`.
+### 2. Download TidyShareLink
 
-Once the command is available, stop the development process with **Ctrl+C**. The installed command stays in Raycast, including after restarting your Mac. This follows [Raycast's local extension workflow](https://developers.raycast.com/basics/create-your-first-extension). If Raycast asks you to sign in for developer setup, follow its prompt; TidyShareLink has no separate account.
+If Git is installed, run these commands in Terminal:
 
-Prefer downloading a ZIP? Use **Code → Download ZIP** on GitHub, extract it, open a terminal in that folder, and start at `npm ci`.
+```sh
+git clone https://github.com/bblurock/tidy-share-link.git
+cd tidy-share-link
+```
+
+**Without Git:** choose **Code → Download ZIP** on this GitHub page and unzip it. In Terminal, type `cd ` (including the space), drag the extracted folder from Finder into Terminal, then press Return. Choose the folder containing `package.json`.
+
+### 3. Build and add it to Raycast
+
+Run these commands from the project folder:
+
+```sh
+npm ci
+npm run dev
+```
+
+`npm ci` installs the project's dependencies. `npm run dev` runs Raycast's `ray develop` command: it builds TidyShareLink and **automatically imports the extension into your local Raycast installation**. You do not need to copy files into Raycast or install the Raycast CLI separately. See [Raycast's CLI documentation](https://developers.raycast.com/information/developer-tools/cli#development).
+
+Wait for the successful build message. The terminal keeps running to watch for code changes; that is expected.
+
+### 4. Confirm it works
+
+Open Raycast with your usual shortcut and search **Tidy Link** or **TidyShareLink**. Open the **Tidy Link** command, paste this example, and confirm that the result keeps `id=42` and removes `fbclid`:
+
+```text
+https://example.com/?id=42&fbclid=demo
+```
+
+Choose **Copy Link** to copy the result. You can also find the extension under **Raycast Settings → Extensions → TidyShareLink**.
+
+### 5. Stop the installer
+
+After the command works, return to Terminal and press **Ctrl+C**. You can close Terminal. The extension stays installed, including after restarting your Mac; you do not run `npm run dev` every time you use it. Raycast documents [using extensions after stopping development mode](https://developers.raycast.com/basics/create-your-first-extension#use-your-extension).
+
+Keep the source folder if you want to update or customize the extension later.
+
+### Installation help
+
+| What you see | What to do |
+| --- | --- |
+| `npm: command not found` or an unsupported Node version | Install a supported Node.js version, reopen Terminal, and check `node --version`. |
+| An error about missing `package.json` | Return to step 2 and open Terminal in the extracted/cloned project folder. |
+| `npm ci` or the build fails | Resolve the first error shown in Terminal before looking for the command in Raycast. Include that error when reporting an issue. |
+| The build succeeds, but Tidy Link is missing | Confirm Raycast is running. Search for **Import Extension** in Raycast, select the project folder containing `package.json`, and follow its prompts. Sign in if requested, then run `npm run dev` from that folder again. |
+| You still see the old Clean Link name | Update your source checkout and run `npm run dev` again. The original v0.1.0 release archives predate the rename; use the main-branch download above for TidyShareLink. |
 
 ### Use it
 
