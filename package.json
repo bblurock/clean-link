@@ -1,7 +1,7 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "local-clean-link",
-  "title": "Clean Link",
+  "title": "TidyShareLink",
   "description": "Remove common tracking parameters from links locally, with a preview before copying.",
   "icon": "clean-link-final.png",
   "author": "bensonlu",
@@ -18,7 +18,7 @@
     {
       "name": "additionalParameters",
       "title": "Additional Parameters to Remove",
-      "description": "Comma-separated names or prefixes ending in *. Example: campaign_id, track_*. Applies to every website. Enter names only, without ? or values. Reopen Clean Link after changing settings.",
+      "description": "Comma-separated names or prefixes ending in *. Example: campaign_id, track_*. Applies to every website. Enter names only, without ? or values. Reopen Tidy Link after changing settings.",
       "type": "textfield",
       "required": false,
       "default": "",
@@ -27,7 +27,7 @@
     {
       "name": "keepParameters",
       "title": "Parameters to Always Keep",
-      "description": "Comma-separated names or prefixes ending in *. Overrides both built-in and additional removal rules on every website. Reopen Clean Link after changing settings.",
+      "description": "Comma-separated names or prefixes ending in *. Overrides both built-in and additional removal rules on every website. Reopen Tidy Link after changing settings.",
       "type": "textfield",
       "required": false,
       "default": "",
@@ -46,14 +46,16 @@
   "commands": [
     {
       "name": "clean-link",
-      "title": "Clean Link",
+      "title": "Tidy Link",
       "description": "Paste a link, preview removed trackers, and copy the cleaned URL.",
       "mode": "view",
       "keywords": [
         "url",
         "tracking",
         "utm",
-        "share"
+        "share",
+        "clean",
+        "tidy"
       ]
     }
   ],

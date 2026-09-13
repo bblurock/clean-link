@@ -1,4 +1,4 @@
-# Contributing to Clean Link
+# Contributing to TidyShareLink
 
 Small, well-explained improvements are welcome: a tracking rule with evidence, a clearer message, a reproducible bug, or a Traditional Chinese translation correction.
 
@@ -13,7 +13,7 @@ npm test
 npm run dev
 ```
 
-Open **Clean Link** in Raycast to check the interface. After editing, run `npm run build` to check the production bundle. The Raycast CLI writes the local extension into your Raycast configuration directory.
+Open **Tidy Link** in Raycast to check the interface. After editing, run `npm run build` to check the production bundle. The Raycast CLI writes the local extension into your Raycast configuration directory.
 
 ## Changes to rules
 

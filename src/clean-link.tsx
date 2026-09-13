@@ -96,13 +96,13 @@ export default function Command() {
 
   return (
     <Form
-      navigationTitle="Clean Link"
+      navigationTitle="Tidy Link"
       isLoading={busy}
       actions={
         <ActionPanel>
           {!settingsError && <ActionPanel.Section>
-            <Action.SubmitForm title="Copy Clean Link" icon={actionIcon("copy")} onSubmit={() => finish("copy")} />
-            <Action title="Paste Clean Link" icon={actionIcon("paste")} shortcut={{ modifiers: ["cmd", "shift"], key: "return" }} onAction={() => finish("paste")} />
+            <Action.SubmitForm title="Copy Link" icon={actionIcon("copy")} onSubmit={() => finish("copy")} />
+            <Action title="Paste Link" icon={actionIcon("paste")} shortcut={{ modifiers: ["cmd", "shift"], key: "return" }} onAction={() => finish("paste")} />
           </ActionPanel.Section>}
           <ActionPanel.Section>
             <Action title="Use Link from Clipboard" icon={actionIcon("clipboard")} shortcut={{ modifiers: ["cmd", "shift"], key: "v" }} onAction={useClipboard} />
@@ -120,8 +120,8 @@ export default function Command() {
         error={submitted ? inputError : undefined}
         autoFocus
       />
-      {settingsError ? <Form.Description title="Check Your Rules" text={`${settingsError} Open Configure Rules (⌘⇧P), then reopen Clean Link.`} /> : <>
-        <Form.Description title="Cleaned Link" text={result?.url ?? "Your cleaned link will appear here."} />
+      {settingsError ? <Form.Description title="Check Your Rules" text={`${settingsError} Open Configure Rules (⌘⇧P), then reopen Tidy Link.`} /> : <>
+        <Form.Description title="Result" text={result?.url ?? "Your link preview will appear here."} />
         {status && <Form.Description title={result?.notice ? "Protected Link" : "Changes"} text={status} />}
       </>}
       <Form.Separator />

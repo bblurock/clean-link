@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Rebrand the extension as TidyShareLink, with the Tidy Link command and Copy Link / Paste Link actions.
+- Refresh the product video and English and Traditional Chinese documentation.
+
 ## 0.1.0 — 2026-09-13
 
 First public source release.

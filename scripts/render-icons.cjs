@@ -25,7 +25,7 @@ const names = ["copy", "paste", "clipboard", "rules"];
   const board = `<svg xmlns="http://www.w3.org/2000/svg" width="840" height="770" viewBox="0 0 840 770">
     <rect width="840" height="770" fill="#F7F5EE"/>
     <g fill="#292923" font-family="Helvetica, Arial, sans-serif">
-      <text x="58" y="57" font-size="26" font-weight="600">Clean Link / Open Studio</text>
+      <text x="58" y="57" font-size="26" font-weight="600">TidyShareLink / Open Studio</text>
       <text x="58" y="85" font-size="14" fill="#686A60">A small icon family, following benson.lu</text>
       <rect x="324" y="118" width="458" height="102" rx="16" fill="#FFFDF8"/>
       <rect x="324" y="246" width="458" height="102" rx="16" fill="#292923"/>

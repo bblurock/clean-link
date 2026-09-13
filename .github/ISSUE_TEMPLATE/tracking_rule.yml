@@ -1,5 +1,5 @@
 name: Suggest a tracking rule
-description: Propose a parameter that Clean Link should remove.
+description: Propose a parameter that TidyShareLink should remove.
 body:
   - type: input
     id: site

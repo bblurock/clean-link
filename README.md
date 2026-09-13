@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="assets/clean-link-final.png" width="88" height="88" alt="Clean Link: cream clipped paper with an ink link and a yellow corner on blue">
+  <img src="assets/clean-link-final.png" width="88" height="88" alt="TidyShareLink: cream clipped paper with an ink link and a yellow corner on blue">
 </p>
-<h1 align="center">Clean Link</h1>
+<h1 align="center">TidyShareLink</h1>
 <p align="center">Cleaner links, ready to share.</p>
 <p align="center">A free, open-source Raycast extension that removes common tracking parameters on your Mac.<br>Preview what changes, then copy or paste.</p>
 <p align="center">
@@ -15,9 +15,9 @@
   <a href="https://github.com/bblurock/clean-link/actions/workflows/ci.yml"><img src="https://github.com/bblurock/clean-link/actions/workflows/ci.yml/badge.svg" alt="Automated checks"></a>
 </p>
 
-<p align="center"><a href="https://github.com/bblurock/clean-link/releases/download/v0.1.0/clean-link-demo.mp4"><img src="docs/images/demo.gif" width="750" alt="Recorded Clean Link demo: remove fbclid, preserve a YouTube timestamp while removing si, and view copy or paste actions."></a></p>
+<p align="center"><a href="https://github.com/bblurock/clean-link/releases/download/v0.1.0/tidysharelink-product-video.mp4"><img src="docs/images/demo.gif" width="750" alt="TidyShareLink demo: copy a browser URL, preview tracking-parameter removal in Raycast, then copy the result back to the browser."></a></p>
 
-<p align="center">A 25-second recording of Clean Link in Raycast, made with <a href="https://github.com/getopenscreen/openscreen">OpenScreen</a>. <a href="https://github.com/bblurock/clean-link/releases/download/v0.1.0/clean-link-demo.mp4">Full-quality video (MP4)</a> · <a href="docs/images/preview.jpg">Static screenshot</a>.</p>
+<p align="center">A 10-second walkthrough: copy a link, tidy it in Raycast, and paste the result. Edited with <a href="https://github.com/getopenscreen/openscreen">OpenScreen</a>. <a href="https://github.com/bblurock/clean-link/releases/download/v0.1.0/tidysharelink-product-video.mp4">Full-quality video (MP4)</a> · <a href="docs/images/preview.jpg">Static screenshot</a>.</p>
 
 ```text
 Before   https://example.com/?id=42&fbclid=demo
@@ -50,15 +50,15 @@ No link fetching, analytics, or URL history of its own. Cleaning runs locally.
    npm run dev
    ```
 
-3. Open Raycast, search **Clean Link**, and try `https://example.com/?id=42&fbclid=demo`.
+3. Open Raycast, search **Tidy Link**, and try `https://example.com/?id=42&fbclid=demo`.
 
-Once the command is available, stop the development process with **Ctrl+C**. The installed command stays in Raycast, including after restarting your Mac. This follows [Raycast's local extension workflow](https://developers.raycast.com/basics/create-your-first-extension). If Raycast asks you to sign in for developer setup, follow its prompt; Clean Link has no separate account.
+Once the command is available, stop the development process with **Ctrl+C**. The installed command stays in Raycast, including after restarting your Mac. This follows [Raycast's local extension workflow](https://developers.raycast.com/basics/create-your-first-extension). If Raycast asks you to sign in for developer setup, follow its prompt; TidyShareLink has no separate account.
 
 Prefer downloading a ZIP? Use **Code → Download ZIP** on GitHub, extract it, open a terminal in that folder, and start at `npm ci`.
 
 ### Use it
 
-Opening Clean Link previews a complete HTTP/HTTPS URL from your clipboard when that preference is enabled. You can also paste a link into the **Link** field. Review the result, then choose an action:
+Opening **Tidy Link** previews a complete HTTP/HTTPS URL from your clipboard when that preference is enabled. You can also paste a link into the **Link** field. Review the result, then choose an action:
 
 | Action | Shortcut |
 | --- | --- |
@@ -74,11 +74,11 @@ Clipboard preview never automatically copies or pastes.
 
 To update a Git checkout, run `git pull --ff-only`, `npm ci`, and `npm run dev` from its folder, then stop with Ctrl+C once registered. Keep any local changes safe before updating. ZIP installations can download and extract the new version, then repeat installation. There is no automatic update checker.
 
-To remove the extension, open **Raycast Settings → Extensions**, select **Clean Link**, and use its removal action. Deleting the source folder alone does not remove the registered command.
+To remove the extension, open **Raycast Settings → Extensions**, select **TidyShareLink**, and use its removal action. Deleting the source folder alone does not remove the registered command.
 
 ## Customize your rules
 
-Open **Configure Rules** with **⌘⇧P**, or find Clean Link in Raycast Settings → Extensions. Reopen the command after changing preferences.
+Open **Configure Rules** with **⌘⇧P**, or find TidyShareLink in Raycast Settings → Extensions. Reopen the command after changing preferences.
 
 | Setting | Example | Behavior |
 | --- | --- | --- |

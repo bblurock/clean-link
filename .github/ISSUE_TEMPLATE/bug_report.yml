@@ -21,4 +21,4 @@ body:
     id: settings
     attributes:
       label: Custom rules and versions
-      description: Include additional/always-keep rules, macOS, Raycast, and Clean Link version or commit.
+      description: Include additional/always-keep rules, macOS, Raycast, and TidyShareLink version or commit.

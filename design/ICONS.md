@@ -1,6 +1,6 @@
-# Clean Link icons
+# TidyShareLink icons
 
-Clean Link follows Benson's Open Studio direction: warm paper, confident ink, a clear blue field, and a slightly irregular silhouette. It should feel human and remain legible in a small Raycast row.
+TidyShareLink follows Benson's Open Studio direction: warm paper, confident ink, a clear blue field, and a slightly irregular silhouette. It should feel human and remain legible in a small Raycast row.
 
 ## App icon
 

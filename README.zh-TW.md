@@ -1,14 +1,14 @@
 <p align="center">
-  <img src="assets/clean-link-final.png" width="88" height="88" alt="Clean Link：藍底、米白剪角紙張、深色連結與黃色紙角">
+  <img src="assets/clean-link-final.png" width="88" height="88" alt="TidyShareLink：藍底、米白剪角紙張、深色連結與黃色紙角">
 </p>
-<h1 align="center">Clean Link</h1>
+<h1 align="center">TidyShareLink</h1>
 <p align="center">整理好連結，再分享。</p>
 <p align="center">免費、開源的 Raycast 擴充功能，在 Mac 本機移除常見追蹤參數。<br>先看清楚變更，再複製或貼上。</p>
 <p align="center"><a href="#安裝">在 Mac 安裝</a> · <a href="README.md">English</a> · <a href="#隱私與限制">隱私</a> · <a href="CONTRIBUTING.md">參與開發</a></p>
 
-<p align="center"><a href="https://github.com/bblurock/clean-link/releases/download/v0.1.0/clean-link-demo.mp4"><img src="docs/images/demo.gif" width="750" alt="Clean Link 實錄：移除 fbclid、移除 si 並保留 YouTube 時間戳記，以及顯示複製與貼上選項。"></a></p>
+<p align="center"><a href="https://github.com/bblurock/clean-link/releases/download/v0.1.0/tidysharelink-product-video.mp4"><img src="docs/images/demo.gif" width="750" alt="TidyShareLink 實錄：複製瀏覽器網址，在 Raycast 預覽移除追蹤參數，再將整理後的連結貼回瀏覽器。"></a></p>
 
-<p align="center">使用 <a href="https://github.com/getopenscreen/openscreen">OpenScreen</a> 錄製的 25 秒 Raycast 操作示範。<a href="https://github.com/bblurock/clean-link/releases/download/v0.1.0/clean-link-demo.mp4">高畫質影片（MP4）</a> · <a href="docs/images/preview.jpg">靜態截圖</a>。</p>
+<p align="center">10 秒操作示範：複製連結、在 Raycast 整理，再貼上結果。使用 <a href="https://github.com/getopenscreen/openscreen">OpenScreen</a> 編輯。<a href="https://github.com/bblurock/clean-link/releases/download/v0.1.0/tidysharelink-product-video.mp4">高畫質影片（MP4）</a> · <a href="docs/images/preview.jpg">靜態截圖</a>。</p>
 
 ```text
 整理前   https://example.com/?id=42&fbclid=demo
@@ -41,15 +41,15 @@
    npm run dev
    ```
 
-3. 開啟 Raycast，搜尋 **Clean Link**，試貼 `https://example.com/?id=42&fbclid=demo`。
+3. 開啟 Raycast，搜尋 **Tidy Link**，試貼 `https://example.com/?id=42&fbclid=demo`。
 
-指令出現後，可以在終端機按 **Ctrl+C** 停止開發程序。擴充功能會留在 Raycast 中，重新啟動 Mac 後仍可使用，無須讓終端機持續執行。這是 [Raycast 支援的本機開發流程](https://developers.raycast.com/basics/create-your-first-extension)。若 Raycast 要求登入以完成開發設定，請依提示操作；Clean Link 沒有另外的帳號。
+指令出現後，可以在終端機按 **Ctrl+C** 停止開發程序。擴充功能會留在 Raycast 中，重新啟動 Mac 後仍可使用，無須讓終端機持續執行。這是 [Raycast 支援的本機開發流程](https://developers.raycast.com/basics/create-your-first-extension)。若 Raycast 要求登入以完成開發設定，請依提示操作；TidyShareLink 沒有另外的帳號。
 
 也可以在 GitHub 選擇 **Code → Download ZIP**，解壓縮後在該資料夾開啟終端機，從 `npm ci` 開始。
 
 ## 使用方式
 
-開啟 Clean Link 時，若已啟用剪貼簿預覽，會載入剪貼簿中的完整 HTTP/HTTPS 網址。也可以自行在 **Link** 欄位貼上。確認結果後，再選擇動作：
+開啟 **Tidy Link** 時，若已啟用剪貼簿預覽，會載入剪貼簿中的完整 HTTP/HTTPS 網址。也可以自行在 **Link** 欄位貼上。確認結果後，再選擇動作：
 
 | 動作 | 快捷鍵 |
 | --- | --- |
@@ -65,11 +65,11 @@
 
 以 Git 安裝的使用者，可在專案資料夾依序執行 `git pull --ff-only`、`npm ci`、`npm run dev`，完成註冊後按 Ctrl+C。更新前請先保護自己的本機修改。使用 ZIP 安裝時，下載新版並重新執行安裝流程。目前沒有自動更新檢查。
 
-移除時，開啟 **Raycast Settings → Extensions**，選取 **Clean Link** 並使用移除功能。只刪除原始碼資料夾，不會移除已註冊的指令。
+移除時，開啟 **Raycast Settings → Extensions**，選取 **TidyShareLink** 並使用移除功能。只刪除原始碼資料夾，不會移除已註冊的指令。
 
 ## 自訂規則
 
-按 **⌘⇧P** 開啟 **Configure Rules**，或到 Raycast Settings → Extensions 找到 Clean Link。修改設定後，請重新開啟指令。
+按 **⌘⇧P** 開啟 **Configure Rules**，或到 Raycast Settings → Extensions 找到 TidyShareLink。修改設定後，請重新開啟指令。
 
 | 設定 | 範例 | 用途 |
 | --- | --- | --- |
