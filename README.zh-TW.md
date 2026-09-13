@@ -6,9 +6,9 @@
 <p align="center">免費、開源的 Raycast 擴充功能，在 Mac 本機移除常見追蹤參數。<br>先看清楚變更，再複製或貼上。</p>
 <p align="center"><a href="#安裝">在 Mac 安裝</a> · <a href="README.md">English</a> · <a href="#隱私與限制">隱私</a> · <a href="CONTRIBUTING.md">參與開發</a></p>
 
-<p align="center"><a href="https://github.com/bblurock/clean-link/releases/download/v0.1.0/tidysharelink-product-video.mp4"><img src="docs/images/demo.gif" width="750" alt="TidyShareLink 實錄：複製瀏覽器網址，在 Raycast 預覽移除追蹤參數，再將整理後的連結貼回瀏覽器。"></a></p>
+<p align="center"><a href="https://github.com/bblurock/tidy-share-link/releases/download/v0.1.0/tidysharelink-product-video.mp4"><img src="docs/images/demo.gif" width="750" alt="TidyShareLink 實錄：複製瀏覽器網址，在 Raycast 預覽移除追蹤參數，再將整理後的連結貼回瀏覽器。"></a></p>
 
-<p align="center">10 秒操作示範：複製連結、在 Raycast 整理，再貼上結果。使用 <a href="https://github.com/getopenscreen/openscreen">OpenScreen</a> 編輯。<a href="https://github.com/bblurock/clean-link/releases/download/v0.1.0/tidysharelink-product-video.mp4">高畫質影片（MP4）</a> · <a href="docs/images/preview.jpg">靜態截圖</a>。</p>
+<p align="center">10 秒操作示範：複製連結、在 Raycast 整理，再貼上結果。使用 <a href="https://github.com/getopenscreen/openscreen">OpenScreen</a> 編輯。<a href="https://github.com/bblurock/tidy-share-link/releases/download/v0.1.0/tidysharelink-product-video.mp4">高畫質影片（MP4）</a> · <a href="docs/images/preview.jpg">靜態截圖</a>。</p>
 
 ```text
 整理前   https://example.com/?id=42&fbclid=demo
@@ -30,8 +30,8 @@
 1. 下載專案並安裝相依套件：
 
    ```sh
-   git clone https://github.com/bblurock/clean-link.git
-   cd clean-link
+   git clone https://github.com/bblurock/tidy-share-link.git
+   cd tidy-share-link
    npm ci
    ```
 
@@ -107,7 +107,7 @@
 
 ## 一起改善
 
-發現遺漏的參數？歡迎[提出追蹤規則](https://github.com/bblurock/clean-link/issues/new?template=tracking_rule.yml)，附上不含個人資訊的範例與可安全移除的依據。也可以[回報問題](https://github.com/bblurock/clean-link/issues/new?template=bug_report.yml)、修正翻譯，或分享給需要的人。
+發現遺漏的參數？歡迎[提出追蹤規則](https://github.com/bblurock/tidy-share-link/issues/new?template=tracking_rule.yml)，附上不含個人資訊的範例與可安全移除的依據。也可以[回報問題](https://github.com/bblurock/tidy-share-link/issues/new?template=bug_report.yml)、修正翻譯，或分享給需要的人。
 
 由 [Benson Lu](https://github.com/bblurock) 製作。可以在 GitHub 追蹤後續作品。
 

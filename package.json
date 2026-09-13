@@ -81,10 +81,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bblurock/clean-link.git"
+    "url": "https://github.com/bblurock/tidy-share-link.git"
   },
-  "homepage": "https://github.com/bblurock/clean-link#readme",
+  "homepage": "https://github.com/bblurock/tidy-share-link#readme",
   "bugs": {
-    "url": "https://github.com/bblurock/clean-link/issues"
+    "url": "https://github.com/bblurock/tidy-share-link/issues"
   }
 }

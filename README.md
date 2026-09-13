@@ -12,12 +12,12 @@
 </p>
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-355FC0" alt="MIT license"></a>
-  <a href="https://github.com/bblurock/clean-link/actions/workflows/ci.yml"><img src="https://github.com/bblurock/clean-link/actions/workflows/ci.yml/badge.svg" alt="Automated checks"></a>
+  <a href="https://github.com/bblurock/tidy-share-link/actions/workflows/ci.yml"><img src="https://github.com/bblurock/tidy-share-link/actions/workflows/ci.yml/badge.svg" alt="Automated checks"></a>
 </p>
 
-<p align="center"><a href="https://github.com/bblurock/clean-link/releases/download/v0.1.0/tidysharelink-product-video.mp4"><img src="docs/images/demo.gif" width="750" alt="TidyShareLink demo: copy a browser URL, preview tracking-parameter removal in Raycast, then copy the result back to the browser."></a></p>
+<p align="center"><a href="https://github.com/bblurock/tidy-share-link/releases/download/v0.1.0/tidysharelink-product-video.mp4"><img src="docs/images/demo.gif" width="750" alt="TidyShareLink demo: copy a browser URL, preview tracking-parameter removal in Raycast, then copy the result back to the browser."></a></p>
 
-<p align="center">A 10-second walkthrough: copy a link, tidy it in Raycast, and paste the result. Edited with <a href="https://github.com/getopenscreen/openscreen">OpenScreen</a>. <a href="https://github.com/bblurock/clean-link/releases/download/v0.1.0/tidysharelink-product-video.mp4">Full-quality video (MP4)</a> · <a href="docs/images/preview.jpg">Static screenshot</a>.</p>
+<p align="center">A 10-second walkthrough: copy a link, tidy it in Raycast, and paste the result. Edited with <a href="https://github.com/getopenscreen/openscreen">OpenScreen</a>. <a href="https://github.com/bblurock/tidy-share-link/releases/download/v0.1.0/tidysharelink-product-video.mp4">Full-quality video (MP4)</a> · <a href="docs/images/preview.jpg">Static screenshot</a>.</p>
 
 ```text
 Before   https://example.com/?id=42&fbclid=demo
@@ -39,8 +39,8 @@ No link fetching, analytics, or URL history of its own. Cleaning runs locally.
 1. Download the project and install its dependencies:
 
    ```sh
-   git clone https://github.com/bblurock/clean-link.git
-   cd clean-link
+   git clone https://github.com/bblurock/tidy-share-link.git
+   cd tidy-share-link
    npm ci
    ```
 
@@ -116,7 +116,7 @@ There is no redirect unwrapping in this release, including wrappers that embed a
 
 ## Help shape it
 
-Found a parameter we missed? [Suggest a rule](https://github.com/bblurock/clean-link/issues/new?template=tracking_rule.yml) with a safe example and evidence that it can be removed. [Report a bug](https://github.com/bblurock/clean-link/issues/new?template=bug_report.yml), improve a translation, or share the project with someone who would use it.
+Found a parameter we missed? [Suggest a rule](https://github.com/bblurock/tidy-share-link/issues/new?template=tracking_rule.yml) with a safe example and evidence that it can be removed. [Report a bug](https://github.com/bblurock/tidy-share-link/issues/new?template=bug_report.yml), improve a translation, or share the project with someone who would use it.
 
 Made by [Benson Lu](https://github.com/bblurock). Follow along there for more small tools.
 
