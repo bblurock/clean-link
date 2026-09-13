@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 24 24" fill="none" stroke="#292923" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+  <title>Use link from clipboard</title>
+  <path d="M8 5H6a1.5 1.5 0 0 0-1.5 1.5v13A1.5 1.5 0 0 0 6 21h12a1.5 1.5 0 0 0 1.5-1.5v-13A1.5 1.5 0 0 0 18 5h-2"/>
+  <rect x="8" y="3" width="8" height="4" rx="1.5"/>
+  <path d="M8.5 12h7m-7 4h5"/>
+</svg>

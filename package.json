@@ -1,0 +1,88 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "local-clean-link",
+  "title": "Clean Link",
+  "description": "Remove common tracking parameters from links locally, with a preview before copying.",
+  "icon": "clean-link-final.png",
+  "author": "bensonlu",
+  "platforms": [
+    "macOS"
+  ],
+  "categories": [
+    "Productivity",
+    "Utilities"
+  ],
+  "license": "MIT",
+  "private": true,
+  "preferences": [
+    {
+      "name": "additionalParameters",
+      "title": "Additional Parameters to Remove",
+      "description": "Comma-separated names or prefixes ending in *. Example: campaign_id, track_*. Applies to every website. Enter names only, without ? or values. Reopen Clean Link after changing settings.",
+      "type": "textfield",
+      "required": false,
+      "default": "",
+      "placeholder": "campaign_id, track_*"
+    },
+    {
+      "name": "keepParameters",
+      "title": "Parameters to Always Keep",
+      "description": "Comma-separated names or prefixes ending in *. Overrides both built-in and additional removal rules on every website. Reopen Clean Link after changing settings.",
+      "type": "textfield",
+      "required": false,
+      "default": "",
+      "placeholder": "ref, campaign_id"
+    },
+    {
+      "name": "useClipboardOnLaunch",
+      "title": "Start with Clipboard",
+      "description": "Load the current clipboard when it contains a complete HTTP or HTTPS URL. Nothing is copied or pasted until you choose an action.",
+      "type": "checkbox",
+      "label": "Preview the link from my clipboard on launch",
+      "required": false,
+      "default": true
+    }
+  ],
+  "commands": [
+    {
+      "name": "clean-link",
+      "title": "Clean Link",
+      "description": "Paste a link, preview removed trackers, and copy the cleaned URL.",
+      "mode": "view",
+      "keywords": [
+        "url",
+        "tracking",
+        "utm",
+        "share"
+      ]
+    }
+  ],
+  "scripts": {
+    "dev": "ray develop",
+    "build": "ray build -e dist",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "icons": "node scripts/render-icons.cjs"
+  },
+  "dependencies": {
+    "@raycast/api": "2.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.17",
+    "@types/react": "19.0.10",
+    "sharp": "0.35.4",
+    "typescript": "^5.9.3"
+  },
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=22.22.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bblurock/clean-link.git"
+  },
+  "homepage": "https://github.com/bblurock/clean-link#readme",
+  "bugs": {
+    "url": "https://github.com/bblurock/clean-link/issues"
+  }
+}

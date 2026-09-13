@@ -1,0 +1,25 @@
+name: Suggest a tracking rule
+description: Propose a parameter that Clean Link should remove.
+body:
+  - type: input
+    id: site
+    attributes:
+      label: Website and parameter
+      placeholder: example.com — campaign_id
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Safe before and after example
+      description: Use made-up IDs and values. Do not post a personal share token or private link.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Why is it safe to remove?
+      description: Link to documentation or describe your verification. Could the same name be meaningful on another site?
+    validations:
+      required: true
